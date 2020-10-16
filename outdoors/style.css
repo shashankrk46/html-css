@@ -34,7 +34,7 @@ body{
 
 }
 
-.logo-box{
+.header__logo-box{
   position: absolute;
   top: 40px;
   left: 40px;
@@ -43,10 +43,10 @@ body{
   /* align-content: flex-start; */
 }
 
-.logo{
+.header__logo{
   height: 35px;
 }
-.logo:hover{
+.header__logo:hover{
   animation:swingleft 2s 1s  ease-in-out ;
 }
 
@@ -58,6 +58,7 @@ body{
   text-align: center;
   height:100vh;
   backface-visibility: hidden;
+  color: #fff;
   
 }
 .heading-primary .heading-primary-main{
@@ -134,7 +135,7 @@ body{
   
 }
 
-.btn-white{
+.btn--white{
   background-color: #fff;
   color: #777;
 }
@@ -164,7 +165,7 @@ a{
   transition: all .3s;
   
 }
-.btn-white::after{
+.btn--white::after{
   background-color: #fff;
 }
 
