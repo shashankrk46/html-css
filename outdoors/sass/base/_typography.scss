@@ -1,0 +1,46 @@
+body{
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 30px;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+.heading-primary{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:100vh;
+  backface-visibility: hidden;
+  color: $color-white;
+   
+  &-main{
+    font-size:4rem;
+    margin-bottom: 0px;
+    line-height: 1.02;
+    text-transform: uppercase;
+    letter-spacing: 1.3rem;
+    /* /* transform: translateX(10px); */
+    /* transition: transform 1s ease-in-out; */
+    animation:swingleft 2s 1s  ease-in-out ;
+  }
+
+  &-sub{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size:2rem;
+    line-height: 1.2;
+    letter-spacing: 0.8rem;
+    animation:swingright 2s 1s ease-in-out ;
+  
+  }
+}
