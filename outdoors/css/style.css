@@ -35,7 +35,8 @@ body {
   padding: 30px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 .heading-primary {
   display: flex;
@@ -77,11 +78,27 @@ a {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.2rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-bottom-margin-large {
-  margin-bottom: 5rem; }
+.u-margin-bottom-large {
+  margin-bottom: 6rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.0rem; }
+
+.u-bottom-margin-medium {
+  margin-bottom: 3.5rem; }
 
 .section-about {
   background-color: #f7f7f7;
@@ -132,6 +149,52 @@ a {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.3rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all .2x; }
+
+.btn-text:hover {
+  color: #fff;
+  background-color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px); }
+
+.btn-text:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0px); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 1.2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0px;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.8); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -153,7 +216,6 @@ a {
 
 .compartment {
   margin: 0 50px;
-  background-color: darkblue;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 

@@ -10,6 +10,7 @@ body{
 
 a{
   text-decoration: none;
+  color: $color-black;
 }
 
 
@@ -59,5 +60,19 @@ a{
   &:hover{
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+  }
+}
+
+.heading-tertiary{
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph{
+  font-size: 1.2rem;
+
+  &:not(:last-child){
+    margin-bottom: 3rem;
   }
 }
