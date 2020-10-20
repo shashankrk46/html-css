@@ -1,0 +1,41 @@
+.compartment-1{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 2px;
+  padding:0 90px ;
+}
+
+.feature-box{
+  background-color: rgba($color-white,.8);
+  font-size:1.1rem;
+  padding: 1.2rem;
+  border-radius: 3px;
+  box-shadow: 0 1.2rem 4rem rgba($color-black,.15);
+  margin:0 30px ;
+  text-align: center;
+  transition: all 0.2s;
+
+  &__icon{
+    font-size: 4rem;
+    margin-bottom:.5rem ;
+    display: inline-block;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+   -webkit-background-clip:text;
+  color: transparent;
+  animation:spin 2s .5s 3 forwards ease-in-out;
+  }
+  &:hover{
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0 1.2rem 4rem rgba($color-black,.15);
+   
+  }
+  
+}
+@keyframes spin{
+   0%{
+     transform: rotate(360deg);
+   }
+   100%{
+    transform: rotate(0deg);
+   }
+  }
