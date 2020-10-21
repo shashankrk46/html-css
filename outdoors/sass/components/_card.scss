@@ -1,14 +1,14 @@
 .card{
    perspective: 150rem;
    -moz-perspective: 150rem;
-   height:75vh;
+   height:90vh;
    position: relative;
   
    &__side{
     
     color: #fff;
     font-size: 2rem;
-    height:75vh;
+    height:90vh;
     transition: all .8s ease;
     position: absolute;
     top: 0%;
@@ -16,6 +16,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow:0 1.5rem 4rem rgba($color-black,.15);
     
     &--front{
@@ -38,4 +39,65 @@
   &:hover &__side--back{
     transform: rotateY(0deg);
   }
+  
+  // front style styling
+  &__picture{
+     background-size: cover;
+     height:10rem ;
+     background-blend-mode:screen;
+     -webkit-clip-path:polygon(0 0,100% 0,100% 85%,0 100%);
+     clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+   
+    &--1{
+      background-image:linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark),url(../../img/nat-5.jpg);
+    }
+    &--2{
+      background-image: url(../../img/nat-4.jpg);
+    }
+    &--3{
+      background-image: url(../../img/nat-4.jpg);
+    }
+  }
+  &__heading{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top:8rem;
+    right: 1rem;
+    width: 75%;
+
+
+  }
+  &__heading-span{
+    padding: .7rem .7rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break:clone;
+    &--1{
+      background-image:linear-gradient(to right bottom,rgba($color-secondary-light,.85),rgba($color-secondary-dark,.85)) ;
+    }
+  }
+
+  &__details{
+    padding: .2rem;
+    ul{
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+      li{
+          text-align: center;
+          font-size: 1rem;
+          padding: 1rem;
+          color:$color-black;
+
+          &:not(:last-child){
+           border-bottom: 1px solid $color-grey-light-2; 
+          }
+      }
+    }
+
+  }
+
+
 }
