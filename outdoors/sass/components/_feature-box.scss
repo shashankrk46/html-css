@@ -9,6 +9,7 @@
   margin:0 30px ;
   text-align: center;
   transition: all 0.2s;
+  overflow: hidden;
 
   &__icon{
     font-size: 4rem;
@@ -19,7 +20,7 @@
   color: transparent;
   animation:spin 2s .5s 3 forwards ease-in-out;
   }
-  &:hover{
+  &:hover {
     transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 1.2rem 4rem rgba($color-black,.15);
    
