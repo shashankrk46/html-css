@@ -123,8 +123,8 @@ a {
   margin-top: -20vh; }
 
 .section-stories {
-  background-color: #f7f7f7;
-  padding: 13rem 0; }
+  padding: 6rem 0;
+  position: relative; }
 
 .btn:link, .btn:visited {
   position: relative;
@@ -350,7 +350,7 @@ a {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 4rem;
   padding-left: 6rem;
@@ -391,6 +391,20 @@ a {
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   position: relative;
